@@ -44,16 +44,79 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CancellationDueToTimeout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CancellationDueToTimeout.Designer.cs">
+      <DependentUpon>CancellationDueToTimeout.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="HandleException.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HandleException.Designer.cs">
+      <DependentUpon>HandleException.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainMenu.Designer.cs">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PauseAsync.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PauseAsync.Designer.cs">
+      <DependentUpon>PauseAsync.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProcessTasksAsTheyComplete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProcessTasksAsTheyComplete.Designer.cs">
+      <DependentUpon>ProcessTasksAsTheyComplete.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReportProgress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportProgress.Designer.cs">
+      <DependentUpon>ReportProgress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReturningCompletedTask.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReturningCompletedTask.Designer.cs">
+      <DependentUpon>ReturningCompletedTask.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TaskCancellation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TaskCancellation.Designer.cs">
+      <DependentUpon>TaskCancellation.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CancellationDueToTimeout.resx">
+      <DependentUpon>CancellationDueToTimeout.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HandleException.resx">
+      <DependentUpon>HandleException.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainMenu.resx">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PauseAsync.resx">
+      <DependentUpon>PauseAsync.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProcessTasksAsTheyComplete.resx">
+      <DependentUpon>ProcessTasksAsTheyComplete.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -65,6 +128,15 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="ReportProgress.resx">
+      <DependentUpon>ReportProgress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReturningCompletedTask.resx">
+      <DependentUpon>ReturningCompletedTask.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TaskCancellation.resx">
+      <DependentUpon>TaskCancellation.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

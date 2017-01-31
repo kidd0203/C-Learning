@@ -303,23 +303,8 @@ namespace AsyncProgramming
 
             var tasks = new[] { A, B, C };
 
-            //foreach (var t in tasks)
-            //{
-            //    var result = await t;
-            //    txtResult.Text = txtResult.Text + Environment.NewLine + result.ToString();
-            //}
-
-            //var processingTasks = (from t in tasks
-            //                       select AwaitAndProcessAsync(t)).ToArray();
-
-
             var processingTasks = tasks.Select(t => AwaitAndProcessAsync(t)).ToArray();
 
-            //var processingTasks = tasks.Select(async t =>
-            //{
-            //    var result = await t;
-            //    txtResult.Text = txtResult.Text + Environment.NewLine + result.ToString();
-            //}).ToArray();
 
             await Task.WhenAll(processingTasks);
         }
